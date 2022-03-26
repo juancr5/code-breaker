@@ -10,20 +10,19 @@ describe("testing /add path", () => {
             done();
         });
     });
-    // test("it should return status code 200", done => {
-    //     request(api)
-    //     .get("/add?a=1&b=1") // Act
-    //     .then(response => {
-    //         expect(response.statusCode).toBe("aplication/json"); //Assert
-    //         done();
-    //     });
-    // });
+    test("it should return an aplication/json", done => {
+        request(api)
+        .get("/add?a=1&b=1") // Act
+        .then(response => {
+            expect(response.type).toBe("application/json"); //Assert
+            done();
+        });
+    });
     test("it should a valid jason object", done => {
         request(api)
         .get("/add?a=1&b=1") // Act
         .then(response => {
-            expect(response.body).not.toBeNull(); //Assert
-            expect(response.body.result).not.toBeUndefined(); //Assert
+            expect(response.body.result).toBe(2); //Assert
             done();
         });
     });

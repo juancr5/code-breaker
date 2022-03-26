@@ -2,7 +2,7 @@ const express = require("express");
 var service = require("./services.js");
 const codeBreaker = require("./code_breaker");
 const app = express();
-const port = 3036;
+const port = 3000;
 
 app.get("/", (req, res) => {
   res.send("Hello World!");

@@ -14,7 +14,7 @@ app.get("/subtract", (req, res) =>{
     var a = parseInt(req.query.a);
     var b = parseInt(req.query.b);
     res.json({
-        result: cal.subtract(a, b)
+        result: cal.subs(a, b)
     });
 });
 

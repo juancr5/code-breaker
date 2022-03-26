@@ -1,5 +1,18 @@
-const secret = "1234";
+let secret = "";
 let attemps = 0;
+
+var arr = [];
+while(arr.length < 4){
+    var r = Math.floor(Math.random() * 10);
+    if(arr.indexOf(r) === -1) arr.push(r);
+}
+
+arr.forEach(element => {
+  secret = secret + element;
+});
+
+console.log(secret)
+
 
 function solve(a) {
   let result = "";

@@ -1,6 +1,5 @@
 const morgan = require("morgan");
 const express = require("express");
-// var service = require("./services.js");
 const codeBreaker = require("./code_breaker");
 const app = express();
 const port = 3000;
@@ -18,10 +17,5 @@ app.get("/api/code_breaker/:number", function (req, res) {
     counter: codeBreaker.counter(),
   });
 });
-// app.use(require("./services.js"));
-
-// app.listen(port, () => {
-//   console.log(`Example app listening on port ${port}`);
-// });
 
 module.exports = app;

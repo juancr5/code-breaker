@@ -1,4 +1,5 @@
 const secret = "1234";
+let attemps = 0;
 
 function solve(a) {
   let result = "";
@@ -24,4 +25,10 @@ function solve(a) {
   return result;
 }
 
+function counter() {
+  attemps++;
+  return attemps;
+}
+
 module.exports.solve = solve;
+module.exports.counter = counter;

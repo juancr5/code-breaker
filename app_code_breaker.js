@@ -10,6 +10,7 @@ app.get("/", (req, res) => {
 app.get("/api/code_breaker/:number", function (req, res) {
   res.json({
     result: codeBreaker.solve(req.params.number),
+    counter: codeBreaker.counter(),
   });
 });
 

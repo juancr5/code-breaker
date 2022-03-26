@@ -2,7 +2,7 @@ const secret = "1234";
 
 function solve(a) {
   let result = "";
-  if (a == secret) {
+  if (a == secret) {https://github.com/SotalvaroO/code-breaker
     return "XXXX";
   }
   for (let i = 0; i < 4; i++) {

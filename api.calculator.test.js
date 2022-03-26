@@ -10,5 +10,30 @@ describe("testing /add path", () => {
             done();
         });
     });
+    // test("it should return status code 200", done => {
+    //     request(api)
+    //     .get("/add?a=1&b=1") // Act
+    //     .then(response => {
+    //         expect(response.statusCode).toBe("aplication/json"); //Assert
+    //         done();
+    //     });
+    // });
+    test("it should a valid jason object", done => {
+        request(api)
+        .get("/add?a=1&b=1") // Act
+        .then(response => {
+            expect(response.body).not.toBeNull(); //Assert
+            expect(response.body.result).not.toBeUndefined(); //Assert
+            done();
+        });
+    });
+    test("it should a return a correct answer", done => {
+        request(api)
+        .get("/add?a=1&b=1") // Act
+        .then(response => {
+            expect(response.body.result).not.toBeUndefined(); //Assert
+            done();
+        });
+    });
     
 })

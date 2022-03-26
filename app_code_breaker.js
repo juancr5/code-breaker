@@ -20,6 +20,8 @@ app.get("/api/code_breaker/:number", function (req, res) {
 });
 // app.use(require("./services.js"));
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
-});
+// app.listen(port, () => {
+//   console.log(`Example app listening on port ${port}`);
+// });
+
+module.exports = app;

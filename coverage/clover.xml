@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1648313939630" clover="3.2.0">
-  <project timestamp="1648313939630" name="All files">
-    <metrics statements="59" coveredstatements="39" conditionals="12" coveredconditionals="4" methods="11" coveredmethods="5" elements="82" coveredelements="48" complexity="0" loc="59" ncloc="59" packages="1" files="4" classes="4"/>
+<coverage generated="1648324091183" clover="3.2.0">
+  <project timestamp="1648324091183" name="All files">
+    <metrics statements="70" coveredstatements="65" conditionals="16" coveredconditionals="15" methods="12" coveredmethods="10" elements="98" coveredelements="90" complexity="0" loc="70" ncloc="70" packages="1" files="4" classes="4"/>
     <file name="api.calculator.js" path="C:\Users\JuanFerr\Documents\Programacion\code-breaker\api.calculator.js">
       <metrics statements="12" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
       <line num="1" count="1" type="stmt"/>
@@ -18,7 +18,7 @@
       <line num="22" count="1" type="stmt"/>
     </file>
     <file name="app_code_breaker.js" path="C:\Users\JuanFerr\Documents\Programacion\code-breaker\app_code_breaker.js">
-      <metrics statements="14" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <metrics statements="13" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
       <line num="1" count="1" type="stmt"/>
       <line num="2" count="1" type="stmt"/>
       <line num="4" count="1" type="stmt"/>
@@ -30,9 +30,8 @@
       <line num="12" count="1" type="stmt"/>
       <line num="13" count="0" type="stmt"/>
       <line num="15" count="1" type="stmt"/>
-      <line num="16" count="0" type="stmt"/>
-      <line num="23" count="1" type="stmt"/>
-      <line num="24" count="0" type="stmt"/>
+      <line num="16" count="5" type="stmt"/>
+      <line num="27" count="1" type="stmt"/>
     </file>
     <file name="calculator.js" path="C:\Users\JuanFerr\Documents\Programacion\code-breaker\calculator.js">
       <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
@@ -46,32 +45,44 @@
       <line num="21" count="2" type="stmt"/>
     </file>
     <file name="code_breaker.js" path="C:\Users\JuanFerr\Documents\Programacion\code-breaker\code_breaker.js">
-      <metrics statements="25" coveredstatements="11" conditionals="10" coveredconditionals="2" methods="3" coveredmethods="1"/>
-      <line num="1" count="1" type="stmt"/>
-      <line num="2" count="1" type="stmt"/>
-      <line num="4" count="1" type="stmt"/>
-      <line num="5" count="1" type="stmt"/>
-      <line num="6" count="6" type="stmt"/>
-      <line num="7" count="6" type="cond" truecount="2" falsecount="0"/>
-      <line num="10" count="1" type="stmt"/>
-      <line num="11" count="4" type="stmt"/>
-      <line num="14" count="1" type="stmt"/>
-      <line num="18" count="0" type="stmt"/>
-      <line num="19" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="20" count="0" type="stmt"/>
-      <line num="22" count="0" type="stmt"/>
-      <line num="23" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="24" count="0" type="stmt"/>
-      <line num="28" count="0" type="stmt"/>
-      <line num="29" count="0" type="stmt"/>
-      <line num="30" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="31" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="32" count="0" type="stmt"/>
-      <line num="38" count="0" type="stmt"/>
-      <line num="42" count="0" type="stmt"/>
-      <line num="43" count="0" type="stmt"/>
-      <line num="46" count="1" type="stmt"/>
-      <line num="47" count="1" type="stmt"/>
+      <metrics statements="37" coveredstatements="36" conditionals="14" coveredconditionals="13" methods="5" coveredmethods="5"/>
+      <line num="1" count="2" type="stmt"/>
+      <line num="2" count="2" type="stmt"/>
+      <line num="5" count="2" type="stmt"/>
+      <line num="6" count="2" type="stmt"/>
+      <line num="7" count="10" type="stmt"/>
+      <line num="8" count="10" type="cond" truecount="2" falsecount="0"/>
+      <line num="11" count="2" type="stmt"/>
+      <line num="12" count="8" type="stmt"/>
+      <line num="15" count="2" type="stmt"/>
+      <line num="18" count="1" type="stmt"/>
+      <line num="19" count="1" type="stmt"/>
+      <line num="20" count="1" type="stmt"/>
+      <line num="21" count="5" type="stmt"/>
+      <line num="22" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="25" count="1" type="stmt"/>
+      <line num="26" count="4" type="stmt"/>
+      <line num="29" count="1" type="stmt"/>
+      <line num="33" count="14" type="stmt"/>
+      <line num="34" count="14" type="cond" truecount="2" falsecount="0"/>
+      <line num="35" count="1" type="stmt"/>
+      <line num="36" count="1" type="stmt"/>
+      <line num="37" count="1" type="stmt"/>
+      <line num="39" count="13" type="cond" truecount="1" falsecount="1"/>
+      <line num="40" count="0" type="stmt"/>
+      <line num="42" count="13" type="stmt"/>
+      <line num="43" count="52" type="cond" truecount="2" falsecount="0"/>
+      <line num="44" count="2" type="stmt"/>
+      <line num="48" count="13" type="stmt"/>
+      <line num="49" count="52" type="stmt"/>
+      <line num="50" count="208" type="cond" truecount="2" falsecount="0"/>
+      <line num="51" count="156" type="cond" truecount="2" falsecount="0"/>
+      <line num="52" count="12" type="stmt"/>
+      <line num="58" count="13" type="stmt"/>
+      <line num="62" count="5" type="stmt"/>
+      <line num="63" count="5" type="stmt"/>
+      <line num="66" count="2" type="stmt"/>
+      <line num="67" count="2" type="stmt"/>
     </file>
   </project>
 </coverage>

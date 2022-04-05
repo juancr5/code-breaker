@@ -2,6 +2,13 @@ const request = require("supertest");
 const api = require("./app_code_breaker"); // Arrange
 
 describe("testing /api/code_breaker path", () => {
+
+    beforeEach(() => {
+        request(api)
+        .get("/test")
+        .then();
+    });
+
     test("it should return status code 200", done => {
         request(api)
         .get("/api/code_breaker/1234") // Act
@@ -10,6 +17,7 @@ describe("testing /api/code_breaker path", () => {
             done();
         });
     });
+
     test("it should return an aplication/json", done => {
         request(api)
         .get("/api/code_breaker/1234") // Act
@@ -18,15 +26,18 @@ describe("testing /api/code_breaker path", () => {
             done();
         });
     });
-    test("it should a valid jason object", done => {
+
+    test("it should a return a correct answer", done => {
         request(api)
         .get("/api/code_breaker/1234") // Act
         .then(response => {
-            expect(response.body.result).toBe("XX"); //Assert
+            expect(response.body.result).toBe("XXXX"); //Assert
             done();
         });
     });
-    test("it should a return a correct answer", done => {
+
+
+    test("it should a not undefined parameter", done => {
         request(api)
         .get("/api/code_breaker/1234") // Act
         .then(response => {
@@ -34,6 +45,7 @@ describe("testing /api/code_breaker path", () => {
             done();
         });
     });
+
     test("it should return the initial status", done => {
         request(api)
         .get("/api/code_breaker/start") // Act
@@ -43,4 +55,5 @@ describe("testing /api/code_breaker path", () => {
             done();
         });
     });
+
 })

@@ -1,21 +1,8 @@
-let secret = "";
+var secret = "";
 let attemps = 0;
 
-
-var arr = [];
-while (arr.length < 4) {
-  var r = Math.floor(Math.random() * 10);
-  if (arr.indexOf(r) === -1) arr.push(r);
-}
-
-arr.forEach(element => {
-  secret = secret + element;
-});
-
-console.log(secret)
-
-function random() {
-  secret = "";
+// Asigna un numero aleatorio al secreto
+function secretRandom() {
   var arr = [];
   while (arr.length < 4) {
     var r = Math.floor(Math.random() * 10);
@@ -26,14 +13,24 @@ function random() {
     secret = secret + element;
   });
 
-  console.log(secret)
+  console.log(secret + "\n")
 }
 
+secretRandom();
+
+
+//
+function secretSet(number) {
+  secret = number;
+}
+
+//
 function solve(a) {
   let result = "";
+
   if (a == "start") {
     attemps = -1;
-    random();
+    secretRandom()
     return "Empiece";
   }
   if (a == secret) {
@@ -63,5 +60,7 @@ function counter() {
   return attemps;
 }
 
+
 module.exports.solve = solve;
+module.exports.secretSet = secretSet;
 module.exports.counter = counter;

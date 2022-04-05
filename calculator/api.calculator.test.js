@@ -2,6 +2,7 @@ const request = require("supertest");
 const api = require("./api.calculator"); // Arrange
 
 describe("testing /add path", () => {
+    
     test("it should return status code 200", done => {
         request(api)
         .get("/add?a=1&b=1") // Act
@@ -10,7 +11,8 @@ describe("testing /add path", () => {
             done();
         });
     });
-    test("it should return an aplication/json", done => {
+
+    test("it should a valid jason object", done => {
         request(api)
         .get("/add?a=1&b=1") // Act
         .then(response => {
@@ -18,7 +20,8 @@ describe("testing /add path", () => {
             done();
         });
     });
-    test("it should a valid jason object", done => {
+
+    test("it should a return a correct answer", done => {
         request(api)
         .get("/add?a=1&b=1") // Act
         .then(response => {
@@ -26,7 +29,8 @@ describe("testing /add path", () => {
             done();
         });
     });
-    test("it should a return a correct answer", done => {
+
+    test("it should a not undefined parameter", done => {
         request(api)
         .get("/add?a=1&b=1") // Act
         .then(response => {
